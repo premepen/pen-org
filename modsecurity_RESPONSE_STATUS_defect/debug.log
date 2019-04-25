@@ -1,0 +1,829 @@
+[155618319935.179936] [] [4] Initializing transaction
+[155618319935.179936] [] [4] Transaction context created.
+[155618319935.179936] [] [4] Starting phase CONNECTION. (SecRules 0)
+[155618319935.179936] [] [9] This phase consists of 32 rule(s).
+[155618319935.179936] [] [4] Starting phase URI. (SecRules 0 + 1/2)
+[155618319935.179936] [/test523] [4] Starting phase REQUEST_HEADERS.  (SecRules 1)
+[155618319935.179936] [/test523] [9] This phase consists of 156 rule(s).
+[155618319935.179936] [/test523] [4] (Rule: 200000) Executing operator "Rx" with param "(?:application(?:/soap\+|/)|text/)xml" against REQUEST_HEADERS:Content-Type.
+[155618319935.179936] [/test523] [4] Rule returned 0.
+[155618319935.179936] [/test523] [9] Matched vars cleaned.
+[155618319935.179936] [/test523] [4] (Rule: 200001) Executing operator "Rx" with param "application/json" against REQUEST_HEADERS:Content-Type.
+[155618319935.179936] [/test523] [4] Rule returned 0.
+[155618319935.179936] [/test523] [9] Matched vars cleaned.
+[155618319935.179936] [/test523] [4] (Rule: 900000) Executing unconditional rule...
+[155618319935.179936] [/test523] [4] Running [independent] (non-disruptive) action: setvar
+[155618319935.179936] [/test523] [8] Saving variable: TX:paranoia_level with value: 4
+[155618319935.179936] [/test523] [9] Running action: status
+[155618319935.179936] [/test523] [9] Running action: nolog
+[155618319935.179936] [/test523] [4] Running (disruptive)     action: pass.
+[155618319935.179936] [/test523] [8] Running action pass
+[155618319935.179936] [/test523] [4] (Rule: 900100) Executing unconditional rule...
+[155618319935.179936] [/test523] [4] Running [independent] (non-disruptive) action: setvar
+[155618319935.179936] [/test523] [8] Saving variable: TX:critical_anomaly_score with value: 5
+[155618319935.179936] [/test523] [4] Running [independent] (non-disruptive) action: setvar
+[155618319935.179936] [/test523] [8] Saving variable: TX:error_anomaly_score with value: 4
+[155618319935.179936] [/test523] [4] Running [independent] (non-disruptive) action: setvar
+[155618319935.179936] [/test523] [8] Saving variable: TX:warning_anomaly_score with value: 3
+[155618319935.179936] [/test523] [4] Running [independent] (non-disruptive) action: setvar
+[155618319935.179936] [/test523] [8] Saving variable: TX:notice_anomaly_score with value: 2
+[155618319935.179936] [/test523] [9] Running action: status
+[155618319935.179936] [/test523] [9] Running action: nolog
+[155618319935.179936] [/test523] [4] Running (disruptive)     action: pass.
+[155618319935.179936] [/test523] [8] Running action pass
+[155618319935.179936] [/test523] [4] (Rule: 900110) Executing unconditional rule...
+[155618319935.179936] [/test523] [4] Running [independent] (non-disruptive) action: setvar
+[155618319935.179936] [/test523] [8] Saving variable: TX:inbound_anomaly_score_threshold with value: 7
+[155618319935.179936] [/test523] [4] Running [independent] (non-disruptive) action: setvar
+[155618319935.179936] [/test523] [8] Saving variable: TX:outbound_anomaly_score_threshold with value: 8
+[155618319935.179936] [/test523] [9] Running action: status
+[155618319935.179936] [/test523] [9] Running action: nolog
+[155618319935.179936] [/test523] [4] Running (disruptive)     action: pass.
+[155618319935.179936] [/test523] [8] Running action pass
+[155618319935.179936] [/test523] [4] (Rule: 900200) Executing unconditional rule...
+[155618319935.179936] [/test523] [4] Running [independent] (non-disruptive) action: setvar
+[155618319935.179936] [/test523] [8] Saving variable: TX:allowed_methods with value: GET HEAD POST OPTIONS
+[155618319935.179936] [/test523] [9] Running action: status
+[155618319935.179936] [/test523] [9] Running action: nolog
+[155618319935.179936] [/test523] [4] Running (disruptive)     action: pass.
+[155618319935.179936] [/test523] [8] Running action pass
+[155618319935.179936] [/test523] [4] (Rule: 900220) Executing unconditional rule...
+[155618319935.179936] [/test523] [4] Running [independent] (non-disruptive) action: setvar
+[155618319935.179936] [/test523] [8] Saving variable: TX:allowed_request_content_type with value: application/octet-stream|text/plain|text/xml|application/x-www-form-urlencoded|multipart/form-data|application/xml|application/soap+xml|application/x-amf|application/json
+[155618319935.179936] [/test523] [9] Running action: status
+[155618319935.179936] [/test523] [9] Running action: nolog
+[155618319935.179936] [/test523] [4] Running (disruptive)     action: pass.
+[155618319935.179936] [/test523] [8] Running action pass
+[155618319935.179936] [/test523] [4] (Rule: 900230) Executing unconditional rule...
+[155618319935.179936] [/test523] [4] Running [independent] (non-disruptive) action: setvar
+[155618319935.179936] [/test523] [8] Saving variable: TX:allowed_http_versions with value: HTTP/0.9 HTTP/1.0 HTTP/1.1 HTTP/2 HTTP/2.0
+[155618319935.179936] [/test523] [9] Running action: status
+[155618319935.179936] [/test523] [9] Running action: nolog
+[155618319935.179936] [/test523] [4] Running (disruptive)     action: pass.
+[155618319935.179936] [/test523] [8] Running action pass
+[155618319935.179936] [/test523] [4] (Rule: 900240) Executing unconditional rule...
+[155618319935.179936] [/test523] [4] Running [independent] (non-disruptive) action: setvar
+[155618319935.179936] [/test523] [8] Saving variable: TX:restricted_extensions with value: .asa/ .cer/ .dbf/ .dll/ .jsp/ .mdb/ .mdb/ .xsd/ .py/ .asax/ .ascx/ .axd/ .backup/ .bak/ .bat/ .cdx/ .cfg/ .cmd/ .com/ .config/ .conf/ .cs/ .csproj/ .csr/ .dat/ .db/ .dos/ .htr/ .htw/ .ida/ .idc/ .idq/ .inc/ .ini/ .key/ .licx/ .lnk/ .log/ .old/ .pass/ .pdb/ .pol/ .printer/ .pwd/ .resources/ .resx/ .sql/ .sys/ .vb/ .vbs/ .vbproj/ .vsdisco/ .webinfo/ .xsx/
+[155618319935.179936] [/test523] [9] Running action: status
+[155618319935.179936] [/test523] [9] Running action: nolog
+[155618319935.179936] [/test523] [4] Running (disruptive)     action: pass.
+[155618319935.179936] [/test523] [8] Running action pass
+[155618319935.179936] [/test523] [4] (Rule: 900250) Executing unconditional rule...
+[155618319935.179936] [/test523] [4] Running [independent] (non-disruptive) action: setvar
+[155618319935.179936] [/test523] [8] Saving variable: TX:restricted_headers with value: /proxy/ /translate/ /if/
+[155618319935.179936] [/test523] [9] Running action: status
+[155618319935.179936] [/test523] [9] Running action: nolog
+[155618319935.179936] [/test523] [4] Running (disruptive)     action: pass.
+[155618319935.179936] [/test523] [8] Running action pass
+[155618319935.179936] [/test523] [4] (Rule: 900260) Executing unconditional rule...
+[155618319935.179936] [/test523] [4] Running [independent] (non-disruptive) action: setvar
+[155618319935.179936] [/test523] [8] Saving variable: TX:static_extensions with value: .css/ .gif/ .ico/ .jpeg/ .jpg/ .js/ .png/ .svg/ .webp/
+[155618319935.179936] [/test523] [9] Running action: status
+[155618319935.179936] [/test523] [9] Running action: nolog
+[155618319935.179936] [/test523] [4] Running (disruptive)     action: pass.
+[155618319935.179936] [/test523] [8] Running action pass
+[155618319935.179936] [/test523] [4] (Rule: 900300) Executing unconditional rule...
+[155618319935.179936] [/test523] [4] Running [independent] (non-disruptive) action: setvar
+[155618319935.179936] [/test523] [8] Saving variable: TX:max_num_args with value: 25
+[155618319935.179936] [/test523] [9] Running action: status
+[155618319935.179936] [/test523] [9] Running action: nolog
+[155618319935.179936] [/test523] [4] Running (disruptive)     action: pass.
+[155618319935.179936] [/test523] [8] Running action pass
+[155618319935.179936] [/test523] [4] (Rule: 900310) Executing unconditional rule...
+[155618319935.179936] [/test523] [4] Running [independent] (non-disruptive) action: setvar
+[155618319935.179936] [/test523] [8] Saving variable: TX:arg_name_length with value: 50
+[155618319935.179936] [/test523] [9] Running action: status
+[155618319935.179936] [/test523] [9] Running action: nolog
+[155618319935.179936] [/test523] [4] Running (disruptive)     action: pass.
+[155618319935.179936] [/test523] [8] Running action pass
+[155618319935.179936] [/test523] [4] (Rule: 900320) Executing unconditional rule...
+[155618319935.179936] [/test523] [4] Running [independent] (non-disruptive) action: setvar
+[155618319935.179936] [/test523] [8] Saving variable: TX:arg_length with value: 5000
+[155618319935.179936] [/test523] [9] Running action: status
+[155618319935.179936] [/test523] [9] Running action: nolog
+[155618319935.179936] [/test523] [4] Running (disruptive)     action: pass.
+[155618319935.179936] [/test523] [8] Running action pass
+[155618319935.179936] [/test523] [4] (Rule: 900330) Executing unconditional rule...
+[155618319935.179936] [/test523] [4] Running [independent] (non-disruptive) action: setvar
+[155618319935.179936] [/test523] [8] Saving variable: TX:total_arg_length with value: 64000
+[155618319935.179936] [/test523] [9] Running action: status
+[155618319935.179936] [/test523] [9] Running action: nolog
+[155618319935.179936] [/test523] [4] Running (disruptive)     action: pass.
+[155618319935.179936] [/test523] [8] Running action pass
+[155618319935.179936] [/test523] [4] (Rule: 900340) Executing unconditional rule...
+[155618319935.179936] [/test523] [4] Running [independent] (non-disruptive) action: setvar
+[155618319935.179936] [/test523] [8] Saving variable: TX:max_file_size with value: 10485760
+[155618319935.179936] [/test523] [9] Running action: status
+[155618319935.179936] [/test523] [9] Running action: nolog
+[155618319935.179936] [/test523] [4] Running (disruptive)     action: pass.
+[155618319935.179936] [/test523] [8] Running action pass
+[155618319935.179936] [/test523] [4] (Rule: 900350) Executing unconditional rule...
+[155618319935.179936] [/test523] [4] Running [independent] (non-disruptive) action: setvar
+[155618319935.179936] [/test523] [8] Saving variable: TX:combined_file_sizes with value: 20485760
+[155618319935.179936] [/test523] [9] Running action: status
+[155618319935.179936] [/test523] [9] Running action: nolog
+[155618319935.179936] [/test523] [4] Running (disruptive)     action: pass.
+[155618319935.179936] [/test523] [8] Running action pass
+[155618319935.179936] [/test523] [4] (Rule: 900400) Executing unconditional rule...
+[155618319935.179936] [/test523] [4] Running [independent] (non-disruptive) action: setvar
+[155618319935.179936] [/test523] [8] Saving variable: TX:sampling_percentage with value: 100
+[155618319935.179936] [/test523] [9] Running action: status
+[155618319935.179936] [/test523] [9] Running action: nolog
+[155618319935.179936] [/test523] [4] Running (disruptive)     action: pass.
+[155618319935.179936] [/test523] [8] Running action pass
+[155618319935.179936] [/test523] [4] (Rule: 900500) Executing unconditional rule...
+[155618319935.179936] [/test523] [4] Running [independent] (non-disruptive) action: setvar
+[155618319935.179936] [/test523] [8] Saving variable: TX:block_search_ip with value: 1
+[155618319935.179936] [/test523] [4] Running [independent] (non-disruptive) action: setvar
+[155618319935.179936] [/test523] [8] Saving variable: TX:block_suspicious_ip with value: 1
+[155618319935.179936] [/test523] [4] Running [independent] (non-disruptive) action: setvar
+[155618319935.179936] [/test523] [8] Saving variable: TX:block_harvester_ip with value: 1
+[155618319935.179936] [/test523] [4] Running [independent] (non-disruptive) action: setvar
+[155618319935.179936] [/test523] [8] Saving variable: TX:block_spammer_ip with value: 1
+[155618319935.179936] [/test523] [9] Running action: status
+[155618319935.179936] [/test523] [9] Running action: nolog
+[155618319935.179936] [/test523] [4] Running (disruptive)     action: pass.
+[155618319935.179936] [/test523] [8] Running action pass
+[155618319935.179936] [/test523] [4] (Rule: 900700) Executing unconditional rule...
+[155618319935.179936] [/test523] [4] Running [independent] (non-disruptive) action: setvar
+[155618319935.179936] [/test523] [8] Saving variable: TX:dos_burst_time_slice with value: 60
+[155618319935.179936] [/test523] [4] Running [independent] (non-disruptive) action: setvar
+[155618319935.179936] [/test523] [8] Saving variable: TX:dos_counter_threshold with value: 120
+[155618319935.179936] [/test523] [4] Running [independent] (non-disruptive) action: setvar
+[155618319935.179936] [/test523] [8] Saving variable: TX:dos_block_timeout with value: 1200
+[155618319935.179936] [/test523] [9] Running action: status
+[155618319935.179936] [/test523] [9] Running action: nolog
+[155618319935.179936] [/test523] [4] Running (disruptive)     action: pass.
+[155618319935.179936] [/test523] [8] Running action pass
+[155618319935.179936] [/test523] [4] (Rule: 900950) Executing unconditional rule...
+[155618319935.179936] [/test523] [4] Running [independent] (non-disruptive) action: setvar
+[155618319935.179936] [/test523] [8] Saving variable: TX:crs_validate_utf8_encoding with value: 1
+[155618319935.179936] [/test523] [9] Running action: status
+[155618319935.179936] [/test523] [9] Running action: nolog
+[155618319935.179936] [/test523] [4] Running (disruptive)     action: pass.
+[155618319935.179936] [/test523] [8] Running action pass
+[155618319935.179936] [/test523] [4] (Rule: 900990) Executing unconditional rule...
+[155618319935.179936] [/test523] [4] Running [independent] (non-disruptive) action: setvar
+[155618319935.179936] [/test523] [8] Saving variable: TX:crs_setup_version with value: 302
+[155618319935.179936] [/test523] [9] Running action: status
+[155618319935.179936] [/test523] [9] Running action: nolog
+[155618319935.179936] [/test523] [4] Running (disruptive)     action: pass.
+[155618319935.179936] [/test523] [8] Running action pass
+[155618319935.179936] [/test523] [4] (Rule: 901001) Executing operator "Eq" with param "0" against TX:crs_setup_version.
+[155618319935.179936] [/test523] [9] Target value: "1" (Variable: TX:crs_setup_version)
+[155618319935.179936] [/test523] [4] Rule returned 0.
+[155618319935.179936] [/test523] [9] Matched vars cleaned.
+[155618319935.179936] [/test523] [4] (Rule: 901100) Executing operator "Eq" with param "0" against TX:inbound_anomaly_score_threshold.
+[155618319935.179936] [/test523] [9] Target value: "1" (Variable: TX:inbound_anomaly_score_threshold)
+[155618319935.179936] [/test523] [4] Rule returned 0.
+[155618319935.179936] [/test523] [9] Matched vars cleaned.
+[155618319935.179936] [/test523] [4] (Rule: 901110) Executing operator "Eq" with param "0" against TX:outbound_anomaly_score_threshold.
+[155618319935.179936] [/test523] [9] Target value: "1" (Variable: TX:outbound_anomaly_score_threshold)
+[155618319935.179936] [/test523] [4] Rule returned 0.
+[155618319935.179936] [/test523] [9] Matched vars cleaned.
+[155618319935.179936] [/test523] [4] (Rule: 901120) Executing operator "Eq" with param "0" against TX:paranoia_level.
+[155618319935.179936] [/test523] [9] Target value: "1" (Variable: TX:paranoia_level)
+[155618319935.179936] [/test523] [4] Rule returned 0.
+[155618319935.179936] [/test523] [9] Matched vars cleaned.
+[155618319935.179936] [/test523] [4] (Rule: 901130) Executing operator "Eq" with param "0" against TX:sampling_percentage.
+[155618319935.179936] [/test523] [9] Target value: "1" (Variable: TX:sampling_percentage)
+[155618319935.179936] [/test523] [4] Rule returned 0.
+[155618319935.179936] [/test523] [9] Matched vars cleaned.
+[155618319935.179936] [/test523] [4] (Rule: 901140) Executing operator "Eq" with param "0" against TX:critical_anomaly_score.
+[155618319935.179936] [/test523] [9] Target value: "1" (Variable: TX:critical_anomaly_score)
+[155618319935.179936] [/test523] [4] Rule returned 0.
+[155618319935.179936] [/test523] [9] Matched vars cleaned.
+[155618319935.179936] [/test523] [4] (Rule: 901141) Executing operator "Eq" with param "0" against TX:error_anomaly_score.
+[155618319935.179936] [/test523] [9] Target value: "1" (Variable: TX:error_anomaly_score)
+[155618319935.179936] [/test523] [4] Rule returned 0.
+[155618319935.179936] [/test523] [9] Matched vars cleaned.
+[155618319935.179936] [/test523] [4] (Rule: 901142) Executing operator "Eq" with param "0" against TX:warning_anomaly_score.
+[155618319935.179936] [/test523] [9] Target value: "1" (Variable: TX:warning_anomaly_score)
+[155618319935.179936] [/test523] [4] Rule returned 0.
+[155618319935.179936] [/test523] [9] Matched vars cleaned.
+[155618319935.179936] [/test523] [4] (Rule: 901143) Executing operator "Eq" with param "0" against TX:notice_anomaly_score.
+[155618319935.179936] [/test523] [9] Target value: "1" (Variable: TX:notice_anomaly_score)
+[155618319935.179936] [/test523] [4] Rule returned 0.
+[155618319935.179936] [/test523] [9] Matched vars cleaned.
+[155618319935.179936] [/test523] [4] (Rule: 901150) Executing operator "Eq" with param "0" against TX:do_reput_block.
+[155618319935.179936] [/test523] [9] Target value: "0" (Variable: TX:do_reput_block)
+[155618319935.179936] [/test523] [9] Matched vars updated.
+[155618319935.179936] [/test523] [4] Running [independent] (non-disruptive) action: setvar
+[155618319935.179936] [/test523] [8] Saving variable: TX:do_reput_block with value: 0
+[155618319935.179936] [/test523] [4] Rule returned 1.
+[155618319935.179936] [/test523] [9] Running action: status
+[155618319935.179936] [/test523] [9] Running action: nolog
+[155618319935.179936] [/test523] [4] Running (disruptive)     action: pass.
+[155618319935.179936] [/test523] [8] Running action pass
+[155618319935.179936] [/test523] [4] (Rule: 901152) Executing operator "Eq" with param "0" against TX:reput_block_duration.
+[155618319935.179936] [/test523] [9] Target value: "0" (Variable: TX:reput_block_duration)
+[155618319935.179936] [/test523] [9] Matched vars updated.
+[155618319935.179936] [/test523] [4] Running [independent] (non-disruptive) action: setvar
+[155618319935.179936] [/test523] [8] Saving variable: TX:reput_block_duration with value: 300
+[155618319935.179936] [/test523] [4] Rule returned 1.
+[155618319935.179936] [/test523] [9] Running action: status
+[155618319935.179936] [/test523] [9] Running action: nolog
+[155618319935.179936] [/test523] [4] Running (disruptive)     action: pass.
+[155618319935.179936] [/test523] [8] Running action pass
+[155618319935.179936] [/test523] [4] (Rule: 901160) Executing operator "Eq" with param "0" against TX:allowed_methods.
+[155618319935.179936] [/test523] [9] Target value: "1" (Variable: TX:allowed_methods)
+[155618319935.179936] [/test523] [4] Rule returned 0.
+[155618319935.179936] [/test523] [9] Matched vars cleaned.
+[155618319935.179936] [/test523] [4] (Rule: 901162) Executing operator "Eq" with param "0" against TX:allowed_request_content_type.
+[155618319935.179936] [/test523] [9] Target value: "1" (Variable: TX:allowed_request_content_type)
+[155618319935.179936] [/test523] [4] Rule returned 0.
+[155618319935.179936] [/test523] [9] Matched vars cleaned.
+[155618319935.179936] [/test523] [4] (Rule: 901163) Executing operator "Eq" with param "0" against TX:allowed_http_versions.
+[155618319935.179936] [/test523] [9] Target value: "1" (Variable: TX:allowed_http_versions)
+[155618319935.179936] [/test523] [4] Rule returned 0.
+[155618319935.179936] [/test523] [9] Matched vars cleaned.
+[155618319935.179936] [/test523] [4] (Rule: 901164) Executing operator "Eq" with param "0" against TX:restricted_extensions.
+[155618319935.179936] [/test523] [9] Target value: "1" (Variable: TX:restricted_extensions)
+[155618319935.179936] [/test523] [4] Rule returned 0.
+[155618319935.179936] [/test523] [9] Matched vars cleaned.
+[155618319935.179936] [/test523] [4] (Rule: 901165) Executing operator "Eq" with param "0" against TX:restricted_headers.
+[155618319935.179936] [/test523] [9] Target value: "1" (Variable: TX:restricted_headers)
+[155618319935.179936] [/test523] [4] Rule returned 0.
+[155618319935.179936] [/test523] [9] Matched vars cleaned.
+[155618319935.179936] [/test523] [4] (Rule: 901166) Executing operator "Eq" with param "0" against TX:static_extensions.
+[155618319935.179936] [/test523] [9] Target value: "1" (Variable: TX:static_extensions)
+[155618319935.179936] [/test523] [4] Rule returned 0.
+[155618319935.179936] [/test523] [9] Matched vars cleaned.
+[155618319935.179936] [/test523] [4] (Rule: 901200) Executing unconditional rule...
+[155618319935.179936] [/test523] [4] Running [independent] (non-disruptive) action: setvar
+[155618319935.179936] [/test523] [8] Saving variable: TX:anomaly_score with value: 0
+[155618319935.179936] [/test523] [4] Running [independent] (non-disruptive) action: setvar
+[155618319935.179936] [/test523] [8] Saving variable: TX:sql_injection_score with value: 0
+[155618319935.179936] [/test523] [4] Running [independent] (non-disruptive) action: setvar
+[155618319935.179936] [/test523] [8] Saving variable: TX:xss_score with value: 0
+[155618319935.179936] [/test523] [4] Running [independent] (non-disruptive) action: setvar
+[155618319935.179936] [/test523] [8] Saving variable: TX:rfi_score with value: 0
+[155618319935.179936] [/test523] [4] Running [independent] (non-disruptive) action: setvar
+[155618319935.179936] [/test523] [8] Saving variable: TX:lfi_score with value: 0
+[155618319935.179936] [/test523] [4] Running [independent] (non-disruptive) action: setvar
+[155618319935.179936] [/test523] [8] Saving variable: TX:rce_score with value: 0
+[155618319935.179936] [/test523] [4] Running [independent] (non-disruptive) action: setvar
+[155618319935.179936] [/test523] [8] Saving variable: TX:php_injection_score with value: 0
+[155618319935.179936] [/test523] [4] Running [independent] (non-disruptive) action: setvar
+[155618319935.179936] [/test523] [8] Saving variable: TX:http_violation_score with value: 0
+[155618319935.179936] [/test523] [4] Running [independent] (non-disruptive) action: setvar
+[155618319935.179936] [/test523] [8] Saving variable: TX:session_fixation_score with value: 0
+[155618319935.179936] [/test523] [4] Running [independent] (non-disruptive) action: setvar
+[155618319935.179936] [/test523] [8] Saving variable: TX:inbound_anomaly_score with value: 0
+[155618319935.179936] [/test523] [4] Running [independent] (non-disruptive) action: setvar
+[155618319935.179936] [/test523] [8] Saving variable: TX:outbound_anomaly_score with value: 0
+[155618319935.179936] [/test523] [4] Running [independent] (non-disruptive) action: setvar
+[155618319935.179936] [/test523] [8] Saving variable: TX:sql_error_match with value: 0
+[155618319935.179936] [/test523] [9] Running action: status
+[155618319935.179936] [/test523] [9] Running action: nolog
+[155618319935.179936] [/test523] [4] Running (disruptive)     action: pass.
+[155618319935.179936] [/test523] [8] Running action pass
+[155618319935.179936] [/test523] [4] (Rule: 901318) Executing operator "Rx" with param "^(.*)$" against REQUEST_HEADERS:User-Agent.
+[155618319935.179936] [/test523] [9]  T (0) t:sha1: ""ί)¤ήΣ‡άμ	γ(]m ™"
+[155618319935.179936] [/test523] [9]  T (0) t:hexEncode: "22ffffffdf29ffffffa4ffffffde1fffffffd3ffffff8cffffff87ffffffdcffffffec09ffffffe3 (26 characters omitted)"
+[155618319935.179936] [/test523] [9] Target value: "22ffffffdf29ffffffa4ffffffde1fffffffd3ffffff8cffffff87ffffffdcffffffec09ffffffe3 (26 characters omitted)" (Variable: REQUEST_HEADERS:User-Agent)
+[155618319935.179936] [/test523] [9] Matched vars updated.
+[155618319935.179936] [/test523] [4] Running [independent] (non-disruptive) action: setvar
+[155618319935.179936] [/test523] [8] Saving variable: TX:ua_hash with value: 22ffffffdf29ffffffa4ffffffde1fffffffd3ffffff8cffffff87ffffffdcffffffec09ffffffe37f285d6dffffffa07fffffff99
+[155618319935.179936] [/test523] [4] Rule returned 1.
+[155618319935.179936] [/test523] [9] Running action: status
+[155618319935.179936] [/test523] [9] Running action: nolog
+[155618319935.179936] [/test523] [4] Running (disruptive)     action: pass.
+[155618319935.179936] [/test523] [8] Running action pass
+[155618319935.179936] [/test523] [4] (Rule: 901321) Executing unconditional rule...
+[155618319935.179936] [/test523] [4] Running [independent] (non-disruptive) action: setvar
+[155618319935.179936] [/test523] [8] Saving variable: TX:real_ip with value: 192.168.2.161
+[155618319935.179936] [/test523] [9] Running action: status
+[155618319935.179936] [/test523] [9] Running action: initcol
+[155618319935.179936] [/test523] [5] Collection `global' initialized with value: global
+[155618319935.179936] [/test523] [9] Running action: initcol
+[155618319935.179936] [/test523] [5] Collection `ip' initialized with value: 192.168.2.161_22ffffffdf29ffffffa4ffffffde1fffffffd3ffffff8cffffff87ffffffdcffffffec09ffffffe37f285d6dffffffa07fffffff99
+[155618319935.179936] [/test523] [9] Running action: nolog
+[155618319935.179936] [/test523] [4] Running (disruptive)     action: pass.
+[155618319935.179936] [/test523] [8] Running action pass
+[155618319935.179936] [/test523] [4] (Rule: 901400) Executing operator "Eq" with param "100" against TX:sampling_percentage.
+[155618319935.179936] [/test523] [9] Target value: "100" (Variable: TX:sampling_percentage)
+[155618319935.179936] [/test523] [9] Matched vars updated.
+[155618319935.179936] [/test523] [4] Rule returned 1.
+[155618319935.179936] [/test523] [9] Running action: status
+[155618319935.179936] [/test523] [9] Running action: nolog
+[155618319935.179936] [/test523] [9] Running action: skipAfter
+[155618319935.179936] [/test523] [5] Setting skipAfter for: END-SAMPLING
+[155618319935.179936] [/test523] [4] Running (disruptive)     action: pass.
+[155618319935.179936] [/test523] [8] Running action pass
+[155618319935.179936] [/test523] [9] Skipped rule id '901410' due to a SecMarker: END-SAMPLING
+[155618319935.179936] [/test523] [9] Rule: 
+[155618319935.179936] [/test523] [9] Skipped rule id '901420' due to a SecMarker: END-SAMPLING
+[155618319935.179936] [/test523] [9] Rule: 
+[155618319935.179936] [/test523] [9] Skipped rule id '901430' due to a SecMarker: END-SAMPLING
+[155618319935.179936] [/test523] [9] Rule: 
+[155618319935.179936] [/test523] [9] Skipped rule id '901440' due to a SecMarker: END-SAMPLING
+[155618319935.179936] [/test523] [9] Rule: 
+[155618319935.179936] [/test523] [9] Skipped rule id '901450' due to a SecMarker: END-SAMPLING
+[155618319935.179936] [/test523] [9] Rule: 
+[155618319935.179936] [/test523] [9] Skipped rule id '0' due to a SecMarker: END-SAMPLING
+[155618319935.179936] [/test523] [9] Rule: END-SAMPLING
+[155618319935.179936] [/test523] [4] Out of a SecMarker after skip 6 rules.
+[155618319935.179936] [/test523] [4] (Rule: 9001180) Executing operator "StrEq" with param "POST" against REQUEST_METHOD.
+[155618319935.179936] [/test523] [9] Target value: "GET" (Variable: REQUEST_METHOD)
+[155618319935.179936] [/test523] [4] Rule returned 0.
+[155618319935.179936] [/test523] [9] Matched vars cleaned.
+[155618319935.179936] [/test523] [4] (Rule: 9001182) Executing operator "StrEq" with param "POST" against REQUEST_METHOD.
+[155618319935.179936] [/test523] [9] Target value: "GET" (Variable: REQUEST_METHOD)
+[155618319935.179936] [/test523] [4] Rule returned 0.
+[155618319935.179936] [/test523] [9] Matched vars cleaned.
+[155618319935.179936] [/test523] [4] (Rule: 9001184) Executing operator "StrEq" with param "POST" against REQUEST_METHOD.
+[155618319935.179936] [/test523] [9] Target value: "GET" (Variable: REQUEST_METHOD)
+[155618319935.179936] [/test523] [4] Rule returned 0.
+[155618319935.179936] [/test523] [9] Matched vars cleaned.
+[155618319935.179936] [/test523] [4] (Rule: 9002000) Executing operator "Eq" with param "0" against TX:crs_exclusions_wordpress.
+[155618319935.179936] [/test523] [9] Target value: "0" (Variable: TX:crs_exclusions_wordpress)
+[155618319935.179936] [/test523] [9] Matched vars updated.
+[155618319935.179936] [/test523] [4] Rule returned 1.
+[155618319935.179936] [/test523] [9] Running action: status
+[155618319935.179936] [/test523] [9] Running action: nolog
+[155618319935.179936] [/test523] [9] Running action: skipAfter
+[155618319935.179936] [/test523] [5] Setting skipAfter for: END-WORDPRESS
+[155618319935.179936] [/test523] [4] Running (disruptive)     action: pass.
+[155618319935.179936] [/test523] [8] Running action pass
+[155618319935.179936] [/test523] [9] Skipped rule id '9002200' due to a SecMarker: END-WORDPRESS
+[155618319935.179936] [/test523] [9] Rule: 
+[155618319935.179936] [/test523] [9] Skipped rule id '9002300' due to a SecMarker: END-WORDPRESS
+[155618319935.179936] [/test523] [9] Rule: 
+[155618319935.179936] [/test523] [9] Skipped rule id '9002400' due to a SecMarker: END-WORDPRESS
+[155618319935.179936] [/test523] [9] Rule: 
+[155618319935.179936] [/test523] [9] Skipped rule id '0' due to a SecMarker: END-WORDPRESS
+[155618319935.179936] [/test523] [9] Rule: END-WORDPRESS-ADMIN
+[155618319935.179936] [/test523] [9] Skipped rule id '0' due to a SecMarker: END-WORDPRESS
+[155618319935.179936] [/test523] [9] Rule: END-WORDPRESS
+[155618319935.179936] [/test523] [4] Out of a SecMarker after skip 5 rules.
+[155618319935.179936] [/test523] [4] (Rule: 905100) Executing operator "StrEq" with param "GET /" against REQUEST_LINE.
+[155618319935.179936] [/test523] [9] Target value: "GET /test523 HTTP/1.1" (Variable: REQUEST_LINE)
+[155618319935.179936] [/test523] [4] Rule returned 0.
+[155618319935.179936] [/test523] [9] Matched vars cleaned.
+[155618319935.179936] [/test523] [4] (Rule: 905110) Executing operator "Rx" with param "^(GET /|OPTIONS \*) HTTP/[12]\.[01]$" against REQUEST_LINE.
+[155618319935.179936] [/test523] [9] Target value: "GET /test523 HTTP/1.1" (Variable: REQUEST_LINE)
+[155618319935.179936] [/test523] [4] Rule returned 0.
+[155618319935.179936] [/test523] [9] Matched vars cleaned.
+[155618319935.179936] [/test523] [4] (Rule: 910011) Executing operator "Lt" with param "1" against TX:PARANOIA_LEVEL.
+[155618319935.179936] [/test523] [9] Target value: "4" (Variable: TX:PARANOIA_LEVEL)
+[155618319935.179936] [/test523] [4] Rule returned 0.
+[155618319935.179936] [/test523] [9] Matched vars cleaned.
+[155618319935.179936] [/test523] [4] (Rule: 910013) Executing operator "Lt" with param "2" against TX:PARANOIA_LEVEL.
+[155618319935.179936] [/test523] [9] Target value: "4" (Variable: TX:PARANOIA_LEVEL)
+[155618319935.179936] [/test523] [4] Rule returned 0.
+[155618319935.179936] [/test523] [9] Matched vars cleaned.
+[155618319935.179936] [/test523] [4] (Rule: 910015) Executing operator "Lt" with param "3" against TX:PARANOIA_LEVEL.
+[155618319935.179936] [/test523] [9] Target value: "4" (Variable: TX:PARANOIA_LEVEL)
+[155618319935.179936] [/test523] [4] Rule returned 0.
+[155618319935.179936] [/test523] [9] Matched vars cleaned.
+[155618319935.179936] [/test523] [4] (Rule: 910017) Executing operator "Lt" with param "4" against TX:PARANOIA_LEVEL.
+[155618319935.179936] [/test523] [9] Target value: "4" (Variable: TX:PARANOIA_LEVEL)
+[155618319935.179936] [/test523] [4] Rule returned 0.
+[155618319935.179936] [/test523] [9] Matched vars cleaned.
+[155618319935.179936] [/test523] [4] (Rule: 911011) Executing operator "Lt" with param "1" against TX:PARANOIA_LEVEL.
+[155618319935.179936] [/test523] [9] Target value: "4" (Variable: TX:PARANOIA_LEVEL)
+[155618319935.179936] [/test523] [4] Rule returned 0.
+[155618319935.179936] [/test523] [9] Matched vars cleaned.
+[155618319935.179936] [/test523] [4] (Rule: 911013) Executing operator "Lt" with param "2" against TX:PARANOIA_LEVEL.
+[155618319935.179936] [/test523] [9] Target value: "4" (Variable: TX:PARANOIA_LEVEL)
+[155618319935.179936] [/test523] [4] Rule returned 0.
+[155618319935.179936] [/test523] [9] Matched vars cleaned.
+[155618319935.179936] [/test523] [4] (Rule: 911015) Executing operator "Lt" with param "3" against TX:PARANOIA_LEVEL.
+[155618319935.179936] [/test523] [9] Target value: "4" (Variable: TX:PARANOIA_LEVEL)
+[155618319935.179936] [/test523] [4] Rule returned 0.
+[155618319935.179936] [/test523] [9] Matched vars cleaned.
+[155618319935.179936] [/test523] [4] (Rule: 911017) Executing operator "Lt" with param "4" against TX:PARANOIA_LEVEL.
+[155618319935.179936] [/test523] [9] Target value: "4" (Variable: TX:PARANOIA_LEVEL)
+[155618319935.179936] [/test523] [4] Rule returned 0.
+[155618319935.179936] [/test523] [9] Matched vars cleaned.
+[155618319935.179936] [/test523] [4] (Rule: 912100) Executing operator "Eq" with param "0" against TX:dos_burst_time_slice.
+[155618319935.179936] [/test523] [9] Target value: "1" (Variable: TX:dos_burst_time_slice)
+[155618319935.179936] [/test523] [4] Rule returned 0.
+[155618319935.179936] [/test523] [9] Matched vars cleaned.
+[155618319935.179936] [/test523] [4] (Rule: 912011) Executing operator "Lt" with param "1" against TX:PARANOIA_LEVEL.
+[155618319935.179936] [/test523] [9] Target value: "4" (Variable: TX:PARANOIA_LEVEL)
+[155618319935.179936] [/test523] [4] Rule returned 0.
+[155618319935.179936] [/test523] [9] Matched vars cleaned.
+[155618319935.179936] [/test523] [4] (Rule: 912120) Executing operator "Eq" with param "1" against IP:DOS_BLOCK.
+[155618319935.179936] [/test523] [4] Rule returned 0.
+[155618319935.179936] [/test523] [9] Matched vars cleaned.
+[155618319935.179936] [/test523] [4] (Rule: 912130) Executing operator "Eq" with param "1" against IP:DOS_BLOCK.
+[155618319935.179936] [/test523] [4] Rule returned 0.
+[155618319935.179936] [/test523] [9] Matched vars cleaned.
+[155618319935.179936] [/test523] [4] (Rule: 912013) Executing operator "Lt" with param "2" against TX:PARANOIA_LEVEL.
+[155618319935.179936] [/test523] [9] Target value: "4" (Variable: TX:PARANOIA_LEVEL)
+[155618319935.179936] [/test523] [4] Rule returned 0.
+[155618319935.179936] [/test523] [9] Matched vars cleaned.
+[155618319935.179936] [/test523] [4] (Rule: 912015) Executing operator "Lt" with param "3" against TX:PARANOIA_LEVEL.
+[155618319935.179936] [/test523] [9] Target value: "4" (Variable: TX:PARANOIA_LEVEL)
+[155618319935.179936] [/test523] [4] Rule returned 0.
+[155618319935.179936] [/test523] [9] Matched vars cleaned.
+[155618319935.179936] [/test523] [4] (Rule: 912017) Executing operator "Lt" with param "4" against TX:PARANOIA_LEVEL.
+[155618319935.179936] [/test523] [9] Target value: "4" (Variable: TX:PARANOIA_LEVEL)
+[155618319935.179936] [/test523] [4] Rule returned 0.
+[155618319935.179936] [/test523] [9] Matched vars cleaned.
+[155618319935.179936] [/test523] [4] (Rule: 913011) Executing operator "Lt" with param "1" against TX:PARANOIA_LEVEL.
+[155618319935.179936] [/test523] [9] Target value: "4" (Variable: TX:PARANOIA_LEVEL)
+[155618319935.179936] [/test523] [4] Rule returned 0.
+[155618319935.179936] [/test523] [9] Matched vars cleaned.
+[155618319935.179936] [/test523] [4] (Rule: 913013) Executing operator "Lt" with param "2" against TX:PARANOIA_LEVEL.
+[155618319935.179936] [/test523] [9] Target value: "4" (Variable: TX:PARANOIA_LEVEL)
+[155618319935.179936] [/test523] [4] Rule returned 0.
+[155618319935.179936] [/test523] [9] Matched vars cleaned.
+[155618319935.179936] [/test523] [4] (Rule: 913015) Executing operator "Lt" with param "3" against TX:PARANOIA_LEVEL.
+[155618319935.179936] [/test523] [9] Target value: "4" (Variable: TX:PARANOIA_LEVEL)
+[155618319935.179936] [/test523] [4] Rule returned 0.
+[155618319935.179936] [/test523] [9] Matched vars cleaned.
+[155618319935.179936] [/test523] [4] (Rule: 913017) Executing operator "Lt" with param "4" against TX:PARANOIA_LEVEL.
+[155618319935.179936] [/test523] [9] Target value: "4" (Variable: TX:PARANOIA_LEVEL)
+[155618319935.179936] [/test523] [4] Rule returned 0.
+[155618319935.179936] [/test523] [9] Matched vars cleaned.
+[155618319935.179936] [/test523] [4] (Rule: 920011) Executing operator "Lt" with param "1" against TX:PARANOIA_LEVEL.
+[155618319935.179936] [/test523] [9] Target value: "4" (Variable: TX:PARANOIA_LEVEL)
+[155618319935.179936] [/test523] [4] Rule returned 0.
+[155618319935.179936] [/test523] [9] Matched vars cleaned.
+[155618319935.179936] [/test523] [4] (Rule: 920160) Executing operator "Rx" with param "^\d+$" against REQUEST_HEADERS:Content-Length.
+[155618319935.179936] [/test523] [4] Rule returned 0.
+[155618319935.179936] [/test523] [9] Matched vars cleaned.
+[155618319935.179936] [/test523] [4] (Rule: 920013) Executing operator "Lt" with param "2" against TX:PARANOIA_LEVEL.
+[155618319935.179936] [/test523] [9] Target value: "4" (Variable: TX:PARANOIA_LEVEL)
+[155618319935.179936] [/test523] [4] Rule returned 0.
+[155618319935.179936] [/test523] [9] Matched vars cleaned.
+[155618319935.179936] [/test523] [4] (Rule: 920015) Executing operator "Lt" with param "3" against TX:PARANOIA_LEVEL.
+[155618319935.179936] [/test523] [9] Target value: "4" (Variable: TX:PARANOIA_LEVEL)
+[155618319935.179936] [/test523] [4] Rule returned 0.
+[155618319935.179936] [/test523] [9] Matched vars cleaned.
+[155618319935.179936] [/test523] [4] (Rule: 920017) Executing operator "Lt" with param "4" against TX:PARANOIA_LEVEL.
+[155618319935.179936] [/test523] [9] Target value: "4" (Variable: TX:PARANOIA_LEVEL)
+[155618319935.179936] [/test523] [4] Rule returned 0.
+[155618319935.179936] [/test523] [9] Matched vars cleaned.
+[155618319935.179936] [/test523] [4] (Rule: 921011) Executing operator "Lt" with param "1" against TX:PARANOIA_LEVEL.
+[155618319935.179936] [/test523] [9] Target value: "4" (Variable: TX:PARANOIA_LEVEL)
+[155618319935.179936] [/test523] [4] Rule returned 0.
+[155618319935.179936] [/test523] [9] Matched vars cleaned.
+[155618319935.179936] [/test523] [4] (Rule: 921013) Executing operator "Lt" with param "2" against TX:PARANOIA_LEVEL.
+[155618319935.179936] [/test523] [9] Target value: "4" (Variable: TX:PARANOIA_LEVEL)
+[155618319935.179936] [/test523] [4] Rule returned 0.
+[155618319935.179936] [/test523] [9] Matched vars cleaned.
+[155618319935.179936] [/test523] [4] (Rule: 921015) Executing operator "Lt" with param "3" against TX:PARANOIA_LEVEL.
+[155618319935.179936] [/test523] [9] Target value: "4" (Variable: TX:PARANOIA_LEVEL)
+[155618319935.179936] [/test523] [4] Rule returned 0.
+[155618319935.179936] [/test523] [9] Matched vars cleaned.
+[155618319935.179936] [/test523] [4] (Rule: 921017) Executing operator "Lt" with param "4" against TX:PARANOIA_LEVEL.
+[155618319935.179936] [/test523] [9] Target value: "4" (Variable: TX:PARANOIA_LEVEL)
+[155618319935.179936] [/test523] [4] Rule returned 0.
+[155618319935.179936] [/test523] [9] Matched vars cleaned.
+[155618319935.179936] [/test523] [4] (Rule: 930011) Executing operator "Lt" with param "1" against TX:PARANOIA_LEVEL.
+[155618319935.179936] [/test523] [9] Target value: "4" (Variable: TX:PARANOIA_LEVEL)
+[155618319935.179936] [/test523] [4] Rule returned 0.
+[155618319935.179936] [/test523] [9] Matched vars cleaned.
+[155618319935.179936] [/test523] [4] (Rule: 930013) Executing operator "Lt" with param "2" against TX:PARANOIA_LEVEL.
+[155618319935.179936] [/test523] [9] Target value: "4" (Variable: TX:PARANOIA_LEVEL)
+[155618319935.179936] [/test523] [4] Rule returned 0.
+[155618319935.179936] [/test523] [9] Matched vars cleaned.
+[155618319935.179936] [/test523] [4] (Rule: 930015) Executing operator "Lt" with param "3" against TX:PARANOIA_LEVEL.
+[155618319935.179936] [/test523] [9] Target value: "4" (Variable: TX:PARANOIA_LEVEL)
+[155618319935.179936] [/test523] [4] Rule returned 0.
+[155618319935.179936] [/test523] [9] Matched vars cleaned.
+[155618319935.179936] [/test523] [4] (Rule: 930017) Executing operator "Lt" with param "4" against TX:PARANOIA_LEVEL.
+[155618319935.179936] [/test523] [9] Target value: "4" (Variable: TX:PARANOIA_LEVEL)
+[155618319935.179936] [/test523] [4] Rule returned 0.
+[155618319935.179936] [/test523] [9] Matched vars cleaned.
+[155618319935.179936] [/test523] [4] (Rule: 931011) Executing operator "Lt" with param "1" against TX:PARANOIA_LEVEL.
+[155618319935.179936] [/test523] [9] Target value: "4" (Variable: TX:PARANOIA_LEVEL)
+[155618319935.179936] [/test523] [4] Rule returned 0.
+[155618319935.179936] [/test523] [9] Matched vars cleaned.
+[155618319935.179936] [/test523] [4] (Rule: 931013) Executing operator "Lt" with param "2" against TX:PARANOIA_LEVEL.
+[155618319935.179936] [/test523] [9] Target value: "4" (Variable: TX:PARANOIA_LEVEL)
+[155618319935.179936] [/test523] [4] Rule returned 0.
+[155618319935.179936] [/test523] [9] Matched vars cleaned.
+[155618319935.179936] [/test523] [4] (Rule: 931015) Executing operator "Lt" with param "3" against TX:PARANOIA_LEVEL.
+[155618319935.179936] [/test523] [9] Target value: "4" (Variable: TX:PARANOIA_LEVEL)
+[155618319935.179936] [/test523] [4] Rule returned 0.
+[155618319935.179936] [/test523] [9] Matched vars cleaned.
+[155618319935.179936] [/test523] [4] (Rule: 931017) Executing operator "Lt" with param "4" against TX:PARANOIA_LEVEL.
+[155618319935.179936] [/test523] [9] Target value: "4" (Variable: TX:PARANOIA_LEVEL)
+[155618319935.179936] [/test523] [4] Rule returned 0.
+[155618319935.179936] [/test523] [9] Matched vars cleaned.
+[155618319935.179936] [/test523] [4] (Rule: 932011) Executing operator "Lt" with param "1" against TX:PARANOIA_LEVEL.
+[155618319935.179936] [/test523] [9] Target value: "4" (Variable: TX:PARANOIA_LEVEL)
+[155618319935.179936] [/test523] [4] Rule returned 0.
+[155618319935.179936] [/test523] [9] Matched vars cleaned.
+[155618319935.179936] [/test523] [4] (Rule: 932013) Executing operator "Lt" with param "2" against TX:PARANOIA_LEVEL.
+[155618319935.179936] [/test523] [9] Target value: "4" (Variable: TX:PARANOIA_LEVEL)
+[155618319935.179936] [/test523] [4] Rule returned 0.
+[155618319935.179936] [/test523] [9] Matched vars cleaned.
+[155618319935.179936] [/test523] [4] (Rule: 932015) Executing operator "Lt" with param "3" against TX:PARANOIA_LEVEL.
+[155618319935.179936] [/test523] [9] Target value: "4" (Variable: TX:PARANOIA_LEVEL)
+[155618319935.179936] [/test523] [4] Rule returned 0.
+[155618319935.179936] [/test523] [9] Matched vars cleaned.
+[155618319935.179936] [/test523] [4] (Rule: 932017) Executing operator "Lt" with param "4" against TX:PARANOIA_LEVEL.
+[155618319935.179936] [/test523] [9] Target value: "4" (Variable: TX:PARANOIA_LEVEL)
+[155618319935.179936] [/test523] [4] Rule returned 0.
+[155618319935.179936] [/test523] [9] Matched vars cleaned.
+[155618319935.179936] [/test523] [4] (Rule: 933011) Executing operator "Lt" with param "1" against TX:PARANOIA_LEVEL.
+[155618319935.179936] [/test523] [9] Target value: "4" (Variable: TX:PARANOIA_LEVEL)
+[155618319935.179936] [/test523] [4] Rule returned 0.
+[155618319935.179936] [/test523] [9] Matched vars cleaned.
+[155618319935.179936] [/test523] [4] (Rule: 933013) Executing operator "Lt" with param "2" against TX:PARANOIA_LEVEL.
+[155618319935.179936] [/test523] [9] Target value: "4" (Variable: TX:PARANOIA_LEVEL)
+[155618319935.179936] [/test523] [4] Rule returned 0.
+[155618319935.179936] [/test523] [9] Matched vars cleaned.
+[155618319935.179936] [/test523] [4] (Rule: 933015) Executing operator "Lt" with param "3" against TX:PARANOIA_LEVEL.
+[155618319935.179936] [/test523] [9] Target value: "4" (Variable: TX:PARANOIA_LEVEL)
+[155618319935.179936] [/test523] [4] Rule returned 0.
+[155618319935.179936] [/test523] [9] Matched vars cleaned.
+[155618319935.179936] [/test523] [4] (Rule: 933017) Executing operator "Lt" with param "4" against TX:PARANOIA_LEVEL.
+[155618319935.179936] [/test523] [9] Target value: "4" (Variable: TX:PARANOIA_LEVEL)
+[155618319935.179936] [/test523] [4] Rule returned 0.
+[155618319935.179936] [/test523] [9] Matched vars cleaned.
+[155618319935.179936] [/test523] [4] (Rule: 941011) Executing operator "Lt" with param "1" against TX:PARANOIA_LEVEL.
+[155618319935.179936] [/test523] [9] Target value: "4" (Variable: TX:PARANOIA_LEVEL)
+[155618319935.179936] [/test523] [4] Rule returned 0.
+[155618319935.179936] [/test523] [9] Matched vars cleaned.
+[155618319935.179936] [/test523] [4] (Rule: 941013) Executing operator "Lt" with param "2" against TX:PARANOIA_LEVEL.
+[155618319935.179936] [/test523] [9] Target value: "4" (Variable: TX:PARANOIA_LEVEL)
+[155618319935.179936] [/test523] [4] Rule returned 0.
+[155618319935.179936] [/test523] [9] Matched vars cleaned.
+[155618319935.179936] [/test523] [4] (Rule: 941015) Executing operator "Lt" with param "3" against TX:PARANOIA_LEVEL.
+[155618319935.179936] [/test523] [9] Target value: "4" (Variable: TX:PARANOIA_LEVEL)
+[155618319935.179936] [/test523] [4] Rule returned 0.
+[155618319935.179936] [/test523] [9] Matched vars cleaned.
+[155618319935.179936] [/test523] [4] (Rule: 941017) Executing operator "Lt" with param "4" against TX:PARANOIA_LEVEL.
+[155618319935.179936] [/test523] [9] Target value: "4" (Variable: TX:PARANOIA_LEVEL)
+[155618319935.179936] [/test523] [4] Rule returned 0.
+[155618319935.179936] [/test523] [9] Matched vars cleaned.
+[155618319935.179936] [/test523] [4] (Rule: 942011) Executing operator "Lt" with param "1" against TX:PARANOIA_LEVEL.
+[155618319935.179936] [/test523] [9] Target value: "4" (Variable: TX:PARANOIA_LEVEL)
+[155618319935.179936] [/test523] [4] Rule returned 0.
+[155618319935.179936] [/test523] [9] Matched vars cleaned.
+[155618319935.179936] [/test523] [4] (Rule: 942013) Executing operator "Lt" with param "2" against TX:PARANOIA_LEVEL.
+[155618319935.179936] [/test523] [9] Target value: "4" (Variable: TX:PARANOIA_LEVEL)
+[155618319935.179936] [/test523] [4] Rule returned 0.
+[155618319935.179936] [/test523] [9] Matched vars cleaned.
+[155618319935.179936] [/test523] [4] (Rule: 942015) Executing operator "Lt" with param "3" against TX:PARANOIA_LEVEL.
+[155618319935.179936] [/test523] [9] Target value: "4" (Variable: TX:PARANOIA_LEVEL)
+[155618319935.179936] [/test523] [4] Rule returned 0.
+[155618319935.179936] [/test523] [9] Matched vars cleaned.
+[155618319935.179936] [/test523] [4] (Rule: 942017) Executing operator "Lt" with param "4" against TX:PARANOIA_LEVEL.
+[155618319935.179936] [/test523] [9] Target value: "4" (Variable: TX:PARANOIA_LEVEL)
+[155618319935.179936] [/test523] [4] Rule returned 0.
+[155618319935.179936] [/test523] [9] Matched vars cleaned.
+[155618319935.179936] [/test523] [4] (Rule: 943011) Executing operator "Lt" with param "1" against TX:PARANOIA_LEVEL.
+[155618319935.179936] [/test523] [9] Target value: "4" (Variable: TX:PARANOIA_LEVEL)
+[155618319935.179936] [/test523] [4] Rule returned 0.
+[155618319935.179936] [/test523] [9] Matched vars cleaned.
+[155618319935.179936] [/test523] [4] (Rule: 943013) Executing operator "Lt" with param "2" against TX:PARANOIA_LEVEL.
+[155618319935.179936] [/test523] [9] Target value: "4" (Variable: TX:PARANOIA_LEVEL)
+[155618319935.179936] [/test523] [4] Rule returned 0.
+[155618319935.179936] [/test523] [9] Matched vars cleaned.
+[155618319935.179936] [/test523] [4] (Rule: 943015) Executing operator "Lt" with param "3" against TX:PARANOIA_LEVEL.
+[155618319935.179936] [/test523] [9] Target value: "4" (Variable: TX:PARANOIA_LEVEL)
+[155618319935.179936] [/test523] [4] Rule returned 0.
+[155618319935.179936] [/test523] [9] Matched vars cleaned.
+[155618319935.179936] [/test523] [4] (Rule: 943017) Executing operator "Lt" with param "4" against TX:PARANOIA_LEVEL.
+[155618319935.179936] [/test523] [9] Target value: "4" (Variable: TX:PARANOIA_LEVEL)
+[155618319935.179936] [/test523] [4] Rule returned 0.
+[155618319935.179936] [/test523] [9] Matched vars cleaned.
+[155618319935.179936] [/test523] [4] (Rule: 949011) Executing operator "Lt" with param "1" against TX:PARANOIA_LEVEL.
+[155618319935.179936] [/test523] [9] Target value: "4" (Variable: TX:PARANOIA_LEVEL)
+[155618319935.179936] [/test523] [4] Rule returned 0.
+[155618319935.179936] [/test523] [9] Matched vars cleaned.
+[155618319935.179936] [/test523] [4] (Rule: 949013) Executing operator "Lt" with param "2" against TX:PARANOIA_LEVEL.
+[155618319935.179936] [/test523] [9] Target value: "4" (Variable: TX:PARANOIA_LEVEL)
+[155618319935.179936] [/test523] [4] Rule returned 0.
+[155618319935.179936] [/test523] [9] Matched vars cleaned.
+[155618319935.179936] [/test523] [4] (Rule: 949015) Executing operator "Lt" with param "3" against TX:PARANOIA_LEVEL.
+[155618319935.179936] [/test523] [9] Target value: "4" (Variable: TX:PARANOIA_LEVEL)
+[155618319935.179936] [/test523] [4] Rule returned 0.
+[155618319935.179936] [/test523] [9] Matched vars cleaned.
+[155618319935.179936] [/test523] [4] (Rule: 949017) Executing operator "Lt" with param "4" against TX:PARANOIA_LEVEL.
+[155618319935.179936] [/test523] [9] Target value: "4" (Variable: TX:PARANOIA_LEVEL)
+[155618319935.179936] [/test523] [4] Rule returned 0.
+[155618319935.179936] [/test523] [9] Matched vars cleaned.
+[155618319935.179936] [/test523] [4] (Rule: 980011) Executing operator "Lt" with param "1" against TX:PARANOIA_LEVEL.
+[155618319935.179936] [/test523] [9] Target value: "4" (Variable: TX:PARANOIA_LEVEL)
+[155618319935.179936] [/test523] [4] Rule returned 0.
+[155618319935.179936] [/test523] [9] Matched vars cleaned.
+[155618319935.179936] [/test523] [4] (Rule: 980013) Executing operator "Lt" with param "2" against TX:PARANOIA_LEVEL.
+[155618319935.179936] [/test523] [9] Target value: "4" (Variable: TX:PARANOIA_LEVEL)
+[155618319935.179936] [/test523] [4] Rule returned 0.
+[155618319935.179936] [/test523] [9] Matched vars cleaned.
+[155618319935.179936] [/test523] [4] (Rule: 980015) Executing operator "Lt" with param "3" against TX:PARANOIA_LEVEL.
+[155618319935.179936] [/test523] [9] Target value: "4" (Variable: TX:PARANOIA_LEVEL)
+[155618319935.179936] [/test523] [4] Rule returned 0.
+[155618319935.179936] [/test523] [9] Matched vars cleaned.
+[155618319935.179936] [/test523] [4] (Rule: 980017) Executing operator "Lt" with param "4" against TX:PARANOIA_LEVEL.
+[155618319935.179936] [/test523] [9] Target value: "4" (Variable: TX:PARANOIA_LEVEL)
+[155618319935.179936] [/test523] [4] Rule returned 0.
+[155618319935.179936] [/test523] [9] Matched vars cleaned.
+[155618319935.179936] [/test523] [4] (Rule: 56781000) Executing operator "PmFromFile" with param "/var/local/share/patch_rules/patch_rule_datas/BlackIpList.data" against TX:REAL_IP.
+[155618319935.179936] [/test523] [9] Target value: "192.168.2.161" (Variable: TX:REAL_IP)
+[155618319935.179936] [/test523] [4] Rule returned 0.
+[155618319935.179936] [/test523] [9] Matched vars cleaned.
+[155618319935.179936] [/test523] [4] (Rule: 56780001) Executing operator "PmFromFile" with param "/var/local/share/patch_rules/patch_rule_datas/WhileUrlList.data" against REQUEST_FILENAME.
+[155618319935.179936] [/test523] [9] Target value: "/test523" (Variable: REQUEST_FILENAME)
+[155618319935.179936] [/test523] [4] Rule returned 0.
+[155618319935.179936] [/test523] [9] Matched vars cleaned.
+[155618319935.179936] [/test523] [4] (Rule: 294201111) Executing operator "Gt" with param "22222" against ARGS.
+[155618319935.179936] [/test523] [4] Rule returned 0.
+[155618319935.179936] [/test523] [9] Matched vars cleaned.
+[155618319935.179936] [/test523] [4] Starting phase RESPONSE_HEADERS. (SecRules 3)
+[155618319935.179936] [/test523] [9] This phase consists of 58 rule(s).
+[155618319935.179936] [/test523] [4] (Rule: 950020) Executing operator "Lt" with param "1" against TX:PARANOIA_LEVEL.
+[155618319935.179936] [/test523] [9] Target value: "4" (Variable: TX:PARANOIA_LEVEL)
+[155618319935.179936] [/test523] [4] Rule returned 0.
+[155618319935.179936] [/test523] [9] Matched vars cleaned.
+[155618319935.179936] [/test523] [4] (Rule: 950013) Executing operator "Lt" with param "2" against TX:PARANOIA_LEVEL.
+[155618319935.179936] [/test523] [9] Target value: "4" (Variable: TX:PARANOIA_LEVEL)
+[155618319935.179936] [/test523] [4] Rule returned 0.
+[155618319935.179936] [/test523] [9] Matched vars cleaned.
+[155618319935.179936] [/test523] [4] (Rule: 950015) Executing operator "Lt" with param "3" against TX:PARANOIA_LEVEL.
+[155618319935.179936] [/test523] [9] Target value: "4" (Variable: TX:PARANOIA_LEVEL)
+[155618319935.179936] [/test523] [4] Rule returned 0.
+[155618319935.179936] [/test523] [9] Matched vars cleaned.
+[155618319935.179936] [/test523] [4] (Rule: 950017) Executing operator "Lt" with param "4" against TX:PARANOIA_LEVEL.
+[155618319935.179936] [/test523] [9] Target value: "4" (Variable: TX:PARANOIA_LEVEL)
+[155618319935.179936] [/test523] [4] Rule returned 0.
+[155618319935.179936] [/test523] [9] Matched vars cleaned.
+[155618319935.179936] [/test523] [4] (Rule: 951011) Executing operator "Lt" with param "1" against TX:PARANOIA_LEVEL.
+[155618319935.179936] [/test523] [9] Target value: "4" (Variable: TX:PARANOIA_LEVEL)
+[155618319935.179936] [/test523] [4] Rule returned 0.
+[155618319935.179936] [/test523] [9] Matched vars cleaned.
+[155618319935.179936] [/test523] [4] (Rule: 951013) Executing operator "Lt" with param "2" against TX:PARANOIA_LEVEL.
+[155618319935.179936] [/test523] [9] Target value: "4" (Variable: TX:PARANOIA_LEVEL)
+[155618319935.179936] [/test523] [4] Rule returned 0.
+[155618319935.179936] [/test523] [9] Matched vars cleaned.
+[155618319935.179936] [/test523] [4] (Rule: 951015) Executing operator "Lt" with param "3" against TX:PARANOIA_LEVEL.
+[155618319935.179936] [/test523] [9] Target value: "4" (Variable: TX:PARANOIA_LEVEL)
+[155618319935.179936] [/test523] [4] Rule returned 0.
+[155618319935.179936] [/test523] [9] Matched vars cleaned.
+[155618319935.179936] [/test523] [4] (Rule: 951017) Executing operator "Lt" with param "4" against TX:PARANOIA_LEVEL.
+[155618319935.179936] [/test523] [9] Target value: "4" (Variable: TX:PARANOIA_LEVEL)
+[155618319935.179936] [/test523] [4] Rule returned 0.
+[155618319935.179936] [/test523] [9] Matched vars cleaned.
+[155618319935.179936] [/test523] [4] (Rule: 952011) Executing operator "Lt" with param "1" against TX:PARANOIA_LEVEL.
+[155618319935.179936] [/test523] [9] Target value: "4" (Variable: TX:PARANOIA_LEVEL)
+[155618319935.179936] [/test523] [4] Rule returned 0.
+[155618319935.179936] [/test523] [9] Matched vars cleaned.
+[155618319935.179936] [/test523] [4] (Rule: 952013) Executing operator "Lt" with param "2" against TX:PARANOIA_LEVEL.
+[155618319935.179936] [/test523] [9] Target value: "4" (Variable: TX:PARANOIA_LEVEL)
+[155618319935.179936] [/test523] [4] Rule returned 0.
+[155618319935.179936] [/test523] [9] Matched vars cleaned.
+[155618319935.179936] [/test523] [4] (Rule: 952015) Executing operator "Lt" with param "3" against TX:PARANOIA_LEVEL.
+[155618319935.179936] [/test523] [9] Target value: "4" (Variable: TX:PARANOIA_LEVEL)
+[155618319935.179936] [/test523] [4] Rule returned 0.
+[155618319935.179936] [/test523] [9] Matched vars cleaned.
+[155618319935.179936] [/test523] [4] (Rule: 952017) Executing operator "Lt" with param "4" against TX:PARANOIA_LEVEL.
+[155618319935.179936] [/test523] [9] Target value: "4" (Variable: TX:PARANOIA_LEVEL)
+[155618319935.179936] [/test523] [4] Rule returned 0.
+[155618319935.179936] [/test523] [9] Matched vars cleaned.
+[155618319935.179936] [/test523] [4] (Rule: 953011) Executing operator "Lt" with param "1" against TX:PARANOIA_LEVEL.
+[155618319935.179936] [/test523] [9] Target value: "4" (Variable: TX:PARANOIA_LEVEL)
+[155618319935.179936] [/test523] [4] Rule returned 0.
+[155618319935.179936] [/test523] [9] Matched vars cleaned.
+[155618319935.179936] [/test523] [4] (Rule: 953013) Executing operator "Lt" with param "2" against TX:PARANOIA_LEVEL.
+[155618319935.179936] [/test523] [9] Target value: "4" (Variable: TX:PARANOIA_LEVEL)
+[155618319935.179936] [/test523] [4] Rule returned 0.
+[155618319935.179936] [/test523] [9] Matched vars cleaned.
+[155618319935.179936] [/test523] [4] (Rule: 953015) Executing operator "Lt" with param "3" against TX:PARANOIA_LEVEL.
+[155618319935.179936] [/test523] [9] Target value: "4" (Variable: TX:PARANOIA_LEVEL)
+[155618319935.179936] [/test523] [4] Rule returned 0.
+[155618319935.179936] [/test523] [9] Matched vars cleaned.
+[155618319935.179936] [/test523] [4] (Rule: 953017) Executing operator "Lt" with param "4" against TX:PARANOIA_LEVEL.
+[155618319935.179936] [/test523] [9] Target value: "4" (Variable: TX:PARANOIA_LEVEL)
+[155618319935.179936] [/test523] [4] Rule returned 0.
+[155618319935.179936] [/test523] [9] Matched vars cleaned.
+[155618319935.179936] [/test523] [4] (Rule: 954011) Executing operator "Lt" with param "1" against TX:PARANOIA_LEVEL.
+[155618319935.179936] [/test523] [9] Target value: "4" (Variable: TX:PARANOIA_LEVEL)
+[155618319935.179936] [/test523] [4] Rule returned 0.
+[155618319935.179936] [/test523] [9] Matched vars cleaned.
+[155618319935.179936] [/test523] [4] (Rule: 954013) Executing operator "Lt" with param "2" against TX:PARANOIA_LEVEL.
+[155618319935.179936] [/test523] [9] Target value: "4" (Variable: TX:PARANOIA_LEVEL)
+[155618319935.179936] [/test523] [4] Rule returned 0.
+[155618319935.179936] [/test523] [9] Matched vars cleaned.
+[155618319935.179936] [/test523] [4] (Rule: 954015) Executing operator "Lt" with param "3" against TX:PARANOIA_LEVEL.
+[155618319935.179936] [/test523] [9] Target value: "4" (Variable: TX:PARANOIA_LEVEL)
+[155618319935.179936] [/test523] [4] Rule returned 0.
+[155618319935.179936] [/test523] [9] Matched vars cleaned.
+[155618319935.179936] [/test523] [4] (Rule: 954017) Executing operator "Lt" with param "4" against TX:PARANOIA_LEVEL.
+[155618319935.179936] [/test523] [9] Target value: "4" (Variable: TX:PARANOIA_LEVEL)
+[155618319935.179936] [/test523] [4] Rule returned 0.
+[155618319935.179936] [/test523] [9] Matched vars cleaned.
+[155618319935.179936] [/test523] [4] (Rule: 959011) Executing operator "Lt" with param "1" against TX:PARANOIA_LEVEL.
+[155618319935.179936] [/test523] [9] Target value: "4" (Variable: TX:PARANOIA_LEVEL)
+[155618319935.179936] [/test523] [4] Rule returned 0.
+[155618319935.179936] [/test523] [9] Matched vars cleaned.
+[155618319935.179936] [/test523] [4] (Rule: 959013) Executing operator "Lt" with param "2" against TX:PARANOIA_LEVEL.
+[155618319935.179936] [/test523] [9] Target value: "4" (Variable: TX:PARANOIA_LEVEL)
+[155618319935.179936] [/test523] [4] Rule returned 0.
+[155618319935.179936] [/test523] [9] Matched vars cleaned.
+[155618319935.179936] [/test523] [4] (Rule: 959015) Executing operator "Lt" with param "3" against TX:PARANOIA_LEVEL.
+[155618319935.179936] [/test523] [9] Target value: "4" (Variable: TX:PARANOIA_LEVEL)
+[155618319935.179936] [/test523] [4] Rule returned 0.
+[155618319935.179936] [/test523] [9] Matched vars cleaned.
+[155618319935.179936] [/test523] [4] (Rule: 959017) Executing operator "Lt" with param "4" against TX:PARANOIA_LEVEL.
+[155618319935.179936] [/test523] [9] Target value: "4" (Variable: TX:PARANOIA_LEVEL)
+[155618319935.179936] [/test523] [4] Rule returned 0.
+[155618319935.179936] [/test523] [9] Matched vars cleaned.
+[155618319935.179936] [/test523] [4] (Rule: 56780003) Executing operator "PmFromFile" with param "/var/local/share/patch_rules/patch_rule_datas/WhileUrlList.data" against REQUEST_FILENAME.
+[155618319935.179936] [/test523] [9] Target value: "/test523" (Variable: REQUEST_FILENAME)
+[155618319935.179936] [/test523] [4] Rule returned 0.
+[155618319935.179936] [/test523] [9] Matched vars cleaned.
+[155618319935.179936] [/test523] [4] (Rule: 56783000) Executing operator "PmFromFile" with param "/var/local/share/patch_rules/patch_rule_datas/StatusFilter.data" against RESPONSE_STATUS.
+[155618319935.179936] [/test523] [9] Target value: "523" (Variable: RESPONSE_STATUS)
+[155618319935.179936] [/test523] [9] Matched vars updated.
+[155618319935.179936] [/test523] [4] Rule returned 1.
+[155618319935.179936] [/test523] [9] Running action: status
+[155618319935.179936] [/test523] [9] Running action: noauditlog
+[155618319935.179936] [/test523] [4] Running (disruptive)     action: redirert.
+[155618319935.179936] [/test523] [8] Skipping this phase as this request was already intercepted.
+[155618319935.179936] [/test523] [4] Not appending response body. Response Content-Type is . It is not marked to be inspected.
+[155618319935.179936] [/test523] [4] Starting phase RESPONSE_BODY. (SecRules 4)
+[155618319935.179936] [/test523] [5] Response Content-Type is . It is not marked to be inspected.
+[155618319935.179936] [/test523] [8] Content-Type(s) marked to be inspected: text/html text/plain text/xml 
+[155618319935.179936] [/test523] [4] Starting phase LOGGING. (SecRules 5)
+[155618319935.179936] [/test523] [9] This phase consists of 46 rule(s).
+[155618319935.179936] [/test523] [4] (Rule: 912110) Executing operator "Eq" with param "0" against TX:dos_burst_time_slice.
+[155618319935.179936] [/test523] [9] Target value: "1" (Variable: TX:dos_burst_time_slice)
+[155618319935.179936] [/test523] [4] Rule returned 0.
+[155618319935.179936] [/test523] [9] Matched vars cleaned.
+[155618319935.179936] [/test523] [4] (Rule: 912140) Executing operator "Eq" with param "1" against IP:DOS_BLOCK.
+[155618319935.179936] [/test523] [4] Rule returned 0.
+[155618319935.179936] [/test523] [9] Matched vars cleaned.
+[155618319935.179936] [/test523] [4] (Rule: 912150) Executing operator "Rx" with param ".*?(\.[a-z0-9]{1,10})?$" against REQUEST_BASENAME.
+[155618319935.179936] [/test523] [9]  T (0) t:lowercase: "test523"
+[155618319935.179936] [/test523] [9] Target value: "test523" (Variable: REQUEST_BASENAME)
+[155618319935.179936] [/test523] [7] Added regex subexpression TX.0: test523
+[155618319935.179936] [/test523] [7] Added regex subexpression TX.1: 
+[155618319935.179936] [/test523] [9] Matched vars updated.
+[155618319935.179936] [/test523] [4] Running [independent] (non-disruptive) action: setvar
+[155618319935.179936] [/test523] [8] Saving variable: TX:extension with value: //
+[155618319935.179936] [/test523] [4] Rule returned 1.
+[155618319935.179936] [/test523] [4] Executing chained rule.
+[155618319935.179936] [/test523] [4] (Rule: 0) Executing operator "Within" with param ".css/ .gif/ .ico/ .jpeg/ .jpg/ .js/ .png/ .svg/ .webp/" Was: "" against TX:EXTENSION.
+[155618319935.179936] [/test523] [9] Target value: "//" (Variable: TX:EXTENSION)
+[155618319935.179936] [/test523] [9] Matched vars updated.
+[155618319935.179936] [/test523] [4] Running [independent] (non-disruptive) action: setvar
+[155618319935.179936] [/test523] [8] Saving variable: IP:dos_counter with value: 1
+[155618319935.179936] [/test523] [4] Rule returned 1.
+[155618319935.179936] [/test523] [9] Running action: status
+[155618319935.179936] [/test523] [9] Running action: status
+[155618319935.179936] [/test523] [4] Running (non-disruptive) action: tag
+[155618319935.179936] [/test523] [9] Rule tag: application-multi
+[155618319935.179936] [/test523] [4] Running (non-disruptive) action: tag
+[155618319935.179936] [/test523] [9] Rule tag: language-multi
+[155618319935.179936] [/test523] [4] Running (non-disruptive) action: tag
+[155618319935.179936] [/test523] [9] Rule tag: platform-multi
+[155618319935.179936] [/test523] [4] Running (non-disruptive) action: tag
+[155618319935.179936] [/test523] [9] Rule tag: attack-dos
+[155618319935.179936] [/test523] [9] Running action: nolog
+[155618319935.179936] [/test523] [4] Running (disruptive)     action: pass.
+[155618319935.179936] [/test523] [8] Running action pass
+[155618319935.179936] [/test523] [4] (Rule: 912160) Executing operator "Ge" with param "120" Was: "" against IP:DOS_COUNTER.
+[155618319935.179936] [/test523] [9] Target value: "1" (Variable: IP:192.168.2.161_22ffffffdf29ffffffa4ffffffde1fffffffd3ffffff8cffffff87ffffffdcffffffec09ffffffe37f285d6dffffffa07fffffff99::::DOS_COUNTER)
+[155618319935.179936] [/test523] [4] Rule returned 0.
+[155618319935.179936] [/test523] [9] Matched vars cleaned.
+[155618319935.179936] [/test523] [4] (Rule: 912161) Executing operator "Ge" with param "120" Was: "" against IP:DOS_COUNTER.
+[155618319935.179936] [/test523] [9] Target value: "1" (Variable: IP:192.168.2.161_22ffffffdf29ffffffa4ffffffde1fffffffd3ffffff8cffffff87ffffffdcffffffec09ffffffe37f285d6dffffffa07fffffff99::::DOS_COUNTER)
+[155618319935.179936] [/test523] [4] Rule returned 0.
+[155618319935.179936] [/test523] [9] Matched vars cleaned.
+[155618319935.179936] [/test523] [4] (Rule: 912170) Executing operator "Ge" with param "2" against IP:DOS_BURST_COUNTER.
+[155618319935.179936] [/test523] [4] Rule returned 0.
+[155618319935.179936] [/test523] [9] Matched vars cleaned.
+[155618319935.179936] [/test523] [4] (Rule: 912019) Executing operator "Lt" with param "2" against TX:PARANOIA_LEVEL.
+[155618319935.179936] [/test523] [9] Target value: "4" (Variable: TX:PARANOIA_LEVEL)
+[155618319935.179936] [/test523] [4] Rule returned 0.
+[155618319935.179936] [/test523] [9] Matched vars cleaned.
+[155618319935.179936] [/test523] [4] (Rule: 912171) Executing operator "Ge" with param "1" against IP:DOS_BURST_COUNTER.
+[155618319935.179936] [/test523] [4] Rule returned 0.
+[155618319935.179936] [/test523] [9] Matched vars cleaned.
+[155618319935.179936] [/test523] [4] (Rule: 980100) Executing operator "Ge" with param "1" against TX:regex(LEAKAGE\\\/ERRORS).
+[155618319935.179936] [/test523] [9] Target value: "0" (Variable: TX:regex(LEAKAGE\\\/ERRORS))
+[155618319935.179936] [/test523] [4] Rule returned 0.
+[155618319935.179936] [/test523] [9] Matched vars cleaned.
+[155618319935.179936] [/test523] [4] (Rule: 980110) Executing operator "Ge" with param "1" against TX:regex(AVAILABILITY\\\/APP_NOT_AVAIL).
+[155618319935.179936] [/test523] [9] Target value: "0" (Variable: TX:regex(AVAILABILITY\\\/APP_NOT_AVAIL))
+[155618319935.179936] [/test523] [4] Rule returned 0.
+[155618319935.179936] [/test523] [9] Matched vars cleaned.
+[155618319935.179936] [/test523] [4] (Rule: 980120) Executing operator "Gt" with param "0" against TX:INBOUND_ANOMALY_SCORE.
+[155618319935.179936] [/test523] [9] Target value: "0" (Variable: TX:INBOUND_ANOMALY_SCORE)
+[155618319935.179936] [/test523] [4] Rule returned 0.
+[155618319935.179936] [/test523] [9] Matched vars cleaned.
+[155618319935.179936] [/test523] [4] (Rule: 980130) Executing operator "Ge" with param "7" Was: "" against TX:INBOUND_ANOMALY_SCORE.
+[155618319935.179936] [/test523] [9] Target value: "0" (Variable: TX:INBOUND_ANOMALY_SCORE)
+[155618319935.179936] [/test523] [4] Rule returned 0.
+[155618319935.179936] [/test523] [9] Matched vars cleaned.
+[155618319935.179936] [/test523] [4] (Rule: 980140) Executing operator "Ge" with param "8" Was: "" against TX:OUTBOUND_ANOMALY_SCORE.
+[155618319935.179936] [/test523] [9] Target value: "0" (Variable: TX:OUTBOUND_ANOMALY_SCORE)
+[155618319935.179936] [/test523] [4] Rule returned 0.
+[155618319935.179936] [/test523] [9] Matched vars cleaned.
+[155618319935.179936] [/test523] [4] (Rule: 56780005) Executing operator "PmFromFile" with param "/var/local/share/patch_rules/patch_rule_datas/WhileUrlList.data" against REQUEST_FILENAME.
+[155618319935.179936] [/test523] [9] Target value: "/test523" (Variable: REQUEST_FILENAME)
+[155618319935.179936] [/test523] [4] Rule returned 0.
+[155618319935.179936] [/test523] [9] Matched vars cleaned.
+[155618319935.179936] [/test523] [8] Checking if this request is suitable to be saved as an audit log.
+[155618319935.179936] [/test523] [8] Checking if this request is relevant to be part of the audit logs.
+[155618319935.179936] [/test523] [5] Saving this request as part of the audit logs.
+[155618319935.179936] [/test523] [8] Request was relevant to be saved. Parts: 6006
